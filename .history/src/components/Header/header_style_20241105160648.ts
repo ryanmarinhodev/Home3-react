@@ -1,6 +1,5 @@
 // HeaderStyles.ts
 import styled, { createGlobalStyle } from "styled-components";
-import { FaBars } from "react-icons/fa6";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -11,9 +10,14 @@ export const GlobalStyle = createGlobalStyle`
     color: #fff;
     font-family: 'Montserrat', sans-serif;
   }
+
+  body {
+    background-image: url("./imagens/black.png");
+    background-position: center;
+  }
 `;
 
-export const HeaderStyle = styled.nav`
+export const Navbar = styled.nav`
   background: black;
   display: flex;
   flex-wrap: wrap;
@@ -21,30 +25,17 @@ export const HeaderStyle = styled.nav`
   justify-content: space-between;
   height: 70px;
   padding: 0 100px;
-
-  @media (max-width: 980px) {
-    justify-content: center;
-    padding: 0;
-  }
 `;
 
 export const Logo = styled.img`
   height: 35px;
   margin-right: 15px;
-
-  @media (max-width: 980px) {
-    height: 38px;
-  }
 `;
 
 export const NavItems = styled.ul`
   display: flex;
   flex: 1;
   padding-left: 40px;
-
-  @media (max-width: 980px) {
-    display: none;
-  }
 
   li {
     list-style: none;
@@ -64,11 +55,13 @@ export const NavItems = styled.ul`
   }
 `;
 
-export const NavBar = styled(FaBars)`
-  display: none;
 
   @media (max-width: 980px) {
-    display: flex;
-    font-size: 28px;
+    margin: 0 20px;
+  }
+
+  @media (max-width: 350px) {
+    margin: 0 10px;
+    font-size: 16px;
   }
 `;

@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const HeaderStyle = styled.nav`
+export const Navbar = styled.nav`
   background: black;
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +69,5 @@ export const NavBar = styled(FaBars)`
 
   @media (max-width: 980px) {
     display: flex;
-    font-size: 28px;
   }
 `;

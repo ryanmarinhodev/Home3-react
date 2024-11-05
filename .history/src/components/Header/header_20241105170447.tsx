@@ -5,7 +5,7 @@ import {
   HeaderStyle,
   Logo,
   NavItems,
-  NavBar,
+  Hamburguer,
 } from "./header_style";
 
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
@@ -30,7 +30,7 @@ const Header: React.FC = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-        <NavBar />
+        <Hamburguer />
       </HeaderStyle>
     </>
   );

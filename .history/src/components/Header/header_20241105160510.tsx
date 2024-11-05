@@ -1,12 +1,6 @@
 // Header.tsx
 import React from "react";
-import {
-  GlobalStyle,
-  HeaderStyle,
-  Logo,
-  NavItems,
-  NavBar,
-} from "./header_style";
+import { GlobalStyle, Navbar, Logo, NavItems, Icon } from "./header_style";
 
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
 
@@ -14,7 +8,7 @@ const Header: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <HeaderStyle>
+      <Navbar>
         <Logo src={LogoHome3} alt="Logo home3" />
         <NavItems>
           <li>
@@ -30,8 +24,17 @@ const Header: React.FC = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-        <NavBar />
-      </HeaderStyle>
+
+        <Icon className="menu-icon">
+          <span className="fas fa-bars"></span>
+        </Icon>
+        <Icon className="search-icon">
+          <span className="fas fa-search"></span>
+        </Icon>
+        <Icon className="cancel-icon">
+          <span className="fas fa-times"></span>
+        </Icon>
+      </Navbar>
     </>
   );
 };

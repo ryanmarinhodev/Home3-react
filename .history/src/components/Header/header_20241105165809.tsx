@@ -2,10 +2,10 @@
 import React from "react";
 import {
   GlobalStyle,
-  HeaderStyle,
+  Navbar,
   Logo,
   NavItems,
-  NavBar,
+  Hamburguer,
 } from "./header_style";
 
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
   return (
     <>
       <GlobalStyle />
-      <HeaderStyle>
+      <Navbar>
         <Logo src={LogoHome3} alt="Logo home3" />
         <NavItems>
           <li>
@@ -30,8 +30,8 @@ const Header: React.FC = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-        <NavBar />
-      </HeaderStyle>
+        <Hamburguer />
+      </Navbar>
     </>
   );
 };

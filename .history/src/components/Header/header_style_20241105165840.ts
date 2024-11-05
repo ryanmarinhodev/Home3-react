@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const HeaderStyle = styled.nav`
+export const Navbar = styled.nav`
   background: black;
   display: flex;
   flex-wrap: wrap;
@@ -64,7 +64,7 @@ export const NavItems = styled.ul`
   }
 `;
 
-export const NavBar = styled(FaBars)`
+export const Hamburguer = styled(FaBars)`
   display: none;
 
   @media (max-width: 980px) {

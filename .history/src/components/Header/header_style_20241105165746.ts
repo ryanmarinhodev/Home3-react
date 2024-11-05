@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const HeaderStyle = styled.nav`
+export const Navbar = styled.nav`
   background: black;
   display: flex;
   flex-wrap: wrap;
@@ -64,8 +64,11 @@ export const NavItems = styled.ul`
   }
 `;
 
-export const NavBar = styled(FaBars)`
+export const Hamburguer = styled(FaBars)`
   display: none;
+  font-size: 24px;
+  color: white;
+  z-index: 10; /* Coloca o ícone à frente de outros elementos */
 
   @media (max-width: 980px) {
     display: flex;

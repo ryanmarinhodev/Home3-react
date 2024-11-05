@@ -64,7 +64,7 @@ export const NavItems = styled.ul`
   }
 `;
 
-export const NavBar = styled(FaBars)`
+export const Hamburguer = styled(FaBars)`
   display: none;
 
   @media (max-width: 980px) {
