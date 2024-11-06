@@ -21,7 +21,6 @@ export const HeaderStyle = styled.nav`
   justify-content: space-between;
   height: 70px;
   padding: 0 100px;
-  gap: 50px;
 
   @media (max-width: 980px) {
     display: flex;
@@ -46,7 +45,7 @@ export const NavItems = styled.ul`
   display: flex;
   flex: 1;
   padding-left: 40px;
-  gap: 25px;
+  gap: 15px;
 
   @media (max-width: 980px) {
     display: none;
@@ -88,6 +87,8 @@ export const User = styled(HiMiniUserPlus)`
   @media (max-width: 980px) {
     display: flex;
     font-size: 28px;
+    justify-content: end;
+    align-items: end;
   }
 `;
 
@@ -120,6 +121,7 @@ export const LoginButton = styled.button`
   }
 `;
 
+// Estilização do ícone
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
   font-size: 20px;

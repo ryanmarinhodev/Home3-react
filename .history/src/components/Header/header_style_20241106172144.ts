@@ -2,6 +2,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniUserPlus } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -87,6 +88,16 @@ export const User = styled(HiMiniUserPlus)`
 
   @media (max-width: 980px) {
     display: flex;
+    font-size: 28px;
+  }
+`;
+
+export const Close = styled(IoMdClose)`
+  display: none;
+  font-size: 20px;
+
+  @media (max-width: 980px) {
+    display: none;
     font-size: 28px;
   }
 `;

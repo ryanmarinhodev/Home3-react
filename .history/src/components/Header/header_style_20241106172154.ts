@@ -2,6 +2,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniUserPlus } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -89,6 +90,11 @@ export const User = styled(HiMiniUserPlus)`
     display: flex;
     font-size: 28px;
   }
+`;
+
+export const Close = styled(IoMdClose)`
+  display: none;
+  font-size: 20px;
 `;
 
 export const LoginButton = styled.button`

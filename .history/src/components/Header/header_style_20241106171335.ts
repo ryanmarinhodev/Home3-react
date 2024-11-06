@@ -2,6 +2,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniUserPlus } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -122,5 +123,10 @@ export const LoginButton = styled.button`
 
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
+  font-size: 20px;
+`;
+
+export const Close = styled(IoMdClose)`
+  display: none;
   font-size: 20px;
 `;

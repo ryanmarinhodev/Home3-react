@@ -21,7 +21,6 @@ export const HeaderStyle = styled.nav`
   justify-content: space-between;
   height: 70px;
   padding: 0 100px;
-  gap: 50px;
 
   @media (max-width: 980px) {
     display: flex;
@@ -46,7 +45,6 @@ export const NavItems = styled.ul`
   display: flex;
   flex: 1;
   padding-left: 40px;
-  gap: 25px;
 
   @media (max-width: 980px) {
     display: none;
@@ -62,7 +60,7 @@ export const NavItems = styled.ul`
       font-weight: 500;
       text-decoration: none;
       font-family: "Anton", sans-serif;
-      transition: background-color 0.3s, color 0.3s;
+      transition: background-color 0.3s
 
       &:hover {
         color: #b79d57;
@@ -88,6 +86,8 @@ export const User = styled(HiMiniUserPlus)`
   @media (max-width: 980px) {
     display: flex;
     font-size: 28px;
+    justify-content: end;
+    align-items: end;
   }
 `;
 
@@ -102,7 +102,6 @@ export const LoginButton = styled.button`
   padding: 12px 24px;
   border-radius: 25px;
   cursor: pointer;
-  gap: 5px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
   @media (max-width: 981px) {
@@ -120,6 +119,7 @@ export const LoginButton = styled.button`
   }
 `;
 
+// Estilização do ícone
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
   font-size: 20px;

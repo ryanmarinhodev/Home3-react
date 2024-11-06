@@ -34,7 +34,7 @@ const Header: React.FC<HeaderProps> = () => {
         ) : (
           <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
         )}
-        <IoMdClose style={{ display: "none" }} />
+        <IoMdClose style={{ display: "none", fontSize: "35px" }} />
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
         <NavItems>

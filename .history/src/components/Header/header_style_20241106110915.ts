@@ -88,6 +88,8 @@ export const User = styled(HiMiniUserPlus)`
   @media (max-width: 980px) {
     display: flex;
     font-size: 28px;
+    justify-content: end;
+    align-items: end;
   }
 `;
 
@@ -120,6 +122,7 @@ export const LoginButton = styled.button`
   }
 `;
 
+// Estilização do ícone
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
   font-size: 20px;

@@ -2,6 +2,7 @@
 import styled, { createGlobalStyle } from "styled-components";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniUserPlus } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -88,6 +89,8 @@ export const User = styled(HiMiniUserPlus)`
   @media (max-width: 980px) {
     display: flex;
     font-size: 28px;
+    justify-content: end;
+    align-items: end;
   }
 `;
 
@@ -120,7 +123,12 @@ export const LoginButton = styled.button`
   }
 `;
 
+// Estilização do ícone
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
+  font-size: 20px;
+`;
+
+export const Close = styled(IoMdClose)`
   font-size: 20px;
 `;

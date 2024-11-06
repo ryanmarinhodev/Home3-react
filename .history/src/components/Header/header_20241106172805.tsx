@@ -32,7 +32,7 @@ const Header: React.FC<HeaderProps> = () => {
         {navItem ? (
           <NavBar onClick={clickMenu} />
         ) : (
-          <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
+          <IoMdClose onClick={clickMenu} />
         )}
         <IoMdClose style={{ display: "none" }} />
         <Logo src={LogoHome3} alt="Logo home3" />

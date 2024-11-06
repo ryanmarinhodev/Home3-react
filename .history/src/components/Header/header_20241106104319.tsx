@@ -1,5 +1,5 @@
 // Header.tsx
-import React, { useState } from "react";
+import React from "react";
 import {
   GlobalStyle,
   HeaderStyle,
@@ -7,36 +7,18 @@ import {
   NavItems,
   NavBar,
   User,
-  LoginButton,
-  IconLogin,
 } from "./header_style";
 
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
-import { IoMdClose } from "react-icons/io";
 
-interface HeaderProps {
-  navItems?: boolean;
-}
-
-const Header: React.FC<HeaderProps> = () => {
-  const [navItem, setNavItem] = useState(false);
-
-  const clickMenu = () => {
-    setNavItem(!navItem);
-  };
-
+const Header: React.FC = () => {
   return (
     <>
       <GlobalStyle />
       <HeaderStyle>
-        {navItem ? (
-          <NavBar onClick={clickMenu} />
-        ) : (
-          <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
-        )}
-        <IoMdClose style={{ display: "none" }} />
-        <Logo src={LogoHome3} alt="Logo home3" />
+        <NavBar />
         <User />
+        <Logo src={LogoHome3} alt="Logo home3" />
         <NavItems>
           <li>
             <a href="./index.html">INÍCIO</a>
@@ -51,10 +33,6 @@ const Header: React.FC<HeaderProps> = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-        <LoginButton>
-          <IconLogin />
-          Login
-        </LoginButton>
       </HeaderStyle>
     </>
   );
