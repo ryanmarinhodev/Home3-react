@@ -34,10 +34,10 @@ const Header: React.FC<HeaderProps> = () => {
         ) : (
           <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
         )}
+
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
-
-        <NavItems className={!navItem ? "largeScreen" : ""}>
+        <NavItems>
           <li>
             <a href="./index.html">INÍCIO</a>
           </li>
@@ -51,7 +51,6 @@ const Header: React.FC<HeaderProps> = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-
         <LoginButton>
           <IconLogin />
           Login

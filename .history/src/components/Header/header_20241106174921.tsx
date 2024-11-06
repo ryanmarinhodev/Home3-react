@@ -51,7 +51,6 @@ const Header: React.FC<HeaderProps> = () => {
             <a href="./contato/contato.html">CONTATO</a>
           </li>
         </NavItems>
-
         <LoginButton>
           <IconLogin />
           Login
