@@ -9,10 +9,11 @@ import {
   User,
   LoginButton,
   IconLogin,
+  Close,
 } from "./header_style";
+import { Link } from "react-router-dom";
 
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
-import { IoMdClose } from "react-icons/io";
 
 interface HeaderProps {
   navItems?: boolean;
@@ -30,25 +31,25 @@ const Header: React.FC<HeaderProps> = () => {
       <GlobalStyle />
       <HeaderStyle>
         {navItem ? (
-          <NavBar onClick={clickMenu} />
+          <Close onClick={clickMenu} />
         ) : (
-          <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
+          <NavBar onClick={clickMenu} />
         )}
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
 
         <NavItems className={!navItem ? "open" : ""}>
           <li>
-            <a href="./index.html">INÍCIO</a>
+            <Link to="/">INÍCIO</Link>
           </li>
           <li>
-            <a href="./sobre/sobre.html">SOBRE</a>
+            <Link to="/sobre">SOBRE</Link>
           </li>
           <li>
-            <a href="./projetos/projeto.html">PROJETOS</a>
+            <Link to="/projetos">PROJETOS</Link>
           </li>
           <li>
-            <a href="./contato/contato.html">CONTATO</a>
+            <Link to="/contato">CONTATO</Link>
           </li>
         </NavItems>
 
