@@ -1,8 +1,9 @@
-// HeaderStyles.ts
 import styled, { createGlobalStyle } from "styled-components";
 import { FaBars } from "react-icons/fa6";
 import { HiMiniUserPlus } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
+// Reset Global Styles
 export const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
@@ -14,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// Header Style
 export const HeaderStyle = styled.nav`
   background: black;
   display: flex;
@@ -30,10 +32,7 @@ export const HeaderStyle = styled.nav`
   }
 `;
 
-export const LogoLogin = styled.img`
-  height: 35px;
-`;
-
+// Logo
 export const Logo = styled.img`
   height: 35px;
 
@@ -42,6 +41,7 @@ export const Logo = styled.img`
   }
 `;
 
+// Nav Items (ul com estilização para li e a)
 export const NavItems = styled.ul`
   display: flex;
   flex: 1;
@@ -71,6 +71,7 @@ export const NavItems = styled.ul`
   }
 `;
 
+// Menu Hamburger (NavBar)
 export const NavBar = styled(FaBars)`
   display: none;
 
@@ -82,6 +83,16 @@ export const NavBar = styled(FaBars)`
   }
 `;
 
+// Close Icon (X)
+export const Close = styled(IoMdClose)`
+  font-size: 28px;
+
+  @media (min-width: 981px) {
+    display: none;
+  }
+`;
+
+// User Icon (Ícone de Usuário)
 export const User = styled(HiMiniUserPlus)`
   display: none;
 
@@ -91,6 +102,7 @@ export const User = styled(HiMiniUserPlus)`
   }
 `;
 
+// Login Button (Botão de Login)
 export const LoginButton = styled.button`
   display: flex;
   align-items: center;
@@ -120,6 +132,7 @@ export const LoginButton = styled.button`
   }
 `;
 
+// Icon for Login Button
 export const IconLogin = styled(HiMiniUserPlus)`
   margin-right: 8px;
   font-size: 20px;
