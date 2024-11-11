@@ -27,7 +27,8 @@ export const HeaderStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 15px;
-  }
+
+    
 `;
 
 export const LogoLogin = styled.img`
@@ -52,7 +53,7 @@ export const NavItems = styled.ul`
     display: none;
 
     &.open {
-      display: block;
+      display: flex;
     }
   }
 

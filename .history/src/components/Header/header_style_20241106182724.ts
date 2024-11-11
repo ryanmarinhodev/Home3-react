@@ -52,7 +52,6 @@ export const NavItems = styled.ul`
     display: none;
 
     &.open {
-      display: block;
     }
   }
 

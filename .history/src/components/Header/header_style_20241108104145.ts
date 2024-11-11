@@ -27,6 +27,8 @@ export const HeaderStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 15px;
+
+    //observar do porque nao está alterando
   }
 `;
 
@@ -52,7 +54,13 @@ export const NavItems = styled.ul`
     display: none;
 
     &.open {
-      display: block;
+      flex-direction: column;
+      position: block;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 150px;
     }
   }
 

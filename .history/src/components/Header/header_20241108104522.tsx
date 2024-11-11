@@ -30,14 +30,17 @@ const Header: React.FC<HeaderProps> = () => {
       <GlobalStyle />
       <HeaderStyle>
         {navItem ? (
-          <NavBar onClick={clickMenu} />
+          <IoMdClose
+            style={{ fontSize: "28px", cursor: "pointer" }}
+            onClick={clickMenu}
+          />
         ) : (
-          <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
+          <NavBar onClick={clickMenu} />
         )}
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
 
-        <NavItems className={!navItem ? "open" : ""}>
+        <NavItems className={navItem ? "open" : ""}>
           <li>
             <a href="./index.html">INÍCIO</a>
           </li>

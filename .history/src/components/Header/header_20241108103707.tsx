@@ -28,7 +28,7 @@ const Header: React.FC<HeaderProps> = () => {
   return (
     <>
       <GlobalStyle />
-      <HeaderStyle>
+      <HeaderStyle className="open">
         {navItem ? (
           <NavBar onClick={clickMenu} />
         ) : (

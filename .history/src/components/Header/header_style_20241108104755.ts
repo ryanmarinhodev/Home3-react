@@ -14,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 `;
 
-export const HeaderStyle = styled.nav`
+export const HeaderStyle = styled.nav
   background: black;
   display: flex;
   align-items: center;
@@ -28,21 +28,21 @@ export const HeaderStyle = styled.nav`
     justify-content: space-between;
     padding: 15px;
   }
-`;
+;
 
-export const LogoLogin = styled.img`
+export const LogoLogin = styled.img
   height: 35px;
-`;
+;
 
-export const Logo = styled.img`
+export const Logo = styled.img
   height: 35px;
 
   @media (max-width: 980px) {
     height: 38px;
   }
-`;
+;
 
-export const NavItems = styled.ul`
+export const NavItems = styled.ul
   display: flex;
   flex: 1;
   padding-left: 40px;
@@ -73,9 +73,9 @@ export const NavItems = styled.ul`
       }
     }
   }
-`;
+;
 
-export const NavBar = styled(FaBars)`
+export const NavBar = styled(FaBars)
   display: none;
 
   @media (max-width: 980px) {
@@ -84,18 +84,18 @@ export const NavBar = styled(FaBars)`
     justify-content: end;
     align-items: end;
   }
-`;
+;
 
-export const User = styled(HiMiniUserPlus)`
+export const User = styled(HiMiniUserPlus)
   display: none;
 
   @media (max-width: 980px) {
     display: flex;
     font-size: 28px;
   }
-`;
+;
 
-export const LoginButton = styled.button`
+export const LoginButton = styled.button
   display: flex;
   align-items: center;
   background: transparent;
@@ -122,9 +122,9 @@ export const LoginButton = styled.button`
   &:focus {
     outline: none;
   }
-`;
+;
 
-export const IconLogin = styled(HiMiniUserPlus)`
+export const IconLogin = styled(HiMiniUserPlus)
   margin-right: 8px;
   font-size: 20px;
-`;
+;

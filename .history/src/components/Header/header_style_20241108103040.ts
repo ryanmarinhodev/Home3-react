@@ -21,17 +21,17 @@ export const HeaderStyle = styled.nav`
   justify-content: space-between;
   height: 70px;
   padding: 0 100px;
-  gap: 50px;
 
   @media (max-width: 980px) {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
     padding: 15px;
   }
-`;
 
-export const LogoLogin = styled.img`
-  height: 35px;
+  &.open {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Logo = styled.img`
@@ -44,29 +44,26 @@ export const Logo = styled.img`
 
 export const NavItems = styled.ul`
   display: flex;
-  flex: 1;
-  padding-left: 40px;
   gap: 25px;
 
   @media (max-width: 980px) {
-    display: none;
-
-    &.open {
-      display: block;
-    }
+    display: ${({ className }) => (className === "open" ? "flex" : "none")};
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
   }
 
   li {
     list-style: none;
-    padding: 0 15px;
 
     a {
       color: #fff;
       font-size: 23px;
       font-weight: 500;
       text-decoration: none;
-      font-family: "Anton", sans-serif;
-      transition: background-color 0.3s, color 0.3s;
+      transition: color 0.3s;
 
       &:hover {
         color: #b79d57;
@@ -77,12 +74,11 @@ export const NavItems = styled.ul`
 
 export const NavBar = styled(FaBars)`
   display: none;
+  font-size: 28px;
 
   @media (max-width: 980px) {
-    display: flex;
-    font-size: 28px;
-    justify-content: end;
-    align-items: end;
+    display: block;
+    cursor: pointer;
   }
 `;
 
@@ -90,7 +86,7 @@ export const User = styled(HiMiniUserPlus)`
   display: none;
 
   @media (max-width: 980px) {
-    display: flex;
+    display: block;
     font-size: 28px;
   }
 `;
@@ -109,10 +105,6 @@ export const LoginButton = styled.button`
   gap: 5px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
-  @media (max-width: 981px) {
-    display: none;
-  }
-
   &:hover {
     background-color: #b79d57;
     color: #fff;
@@ -121,6 +113,10 @@ export const LoginButton = styled.button`
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 980px) {
+    display: none;
   }
 `;
 

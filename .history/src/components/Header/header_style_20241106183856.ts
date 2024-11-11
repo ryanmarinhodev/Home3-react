@@ -27,6 +27,17 @@ export const HeaderStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 15px;
+
+    //observar do porque nao está alterando
+    &.open {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 150px;
+    }
   }
 `;
 

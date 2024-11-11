@@ -27,6 +27,8 @@ export const HeaderStyle = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 15px;
+
+    //observar do porque nao está alterando
   }
 `;
 

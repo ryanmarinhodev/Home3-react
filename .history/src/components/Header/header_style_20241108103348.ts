@@ -51,8 +51,15 @@ export const NavItems = styled.ul`
   @media (max-width: 980px) {
     display: none;
 
+    //observar do porque nao está alterando
     &.open {
-      display: block;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      background-color: black;
+      height: 150px;
     }
   }
 

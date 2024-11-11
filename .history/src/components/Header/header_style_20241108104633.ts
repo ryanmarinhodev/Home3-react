@@ -22,16 +22,12 @@ export const HeaderStyle = styled.nav`
   height: 70px;
   padding: 0 100px;
   gap: 50px;
+  position: relative;
 
   @media (max-width: 980px) {
-    display: flex;
-    justify-content: space-between;
     padding: 15px;
+    justify-content: space-between;
   }
-`;
-
-export const LogoLogin = styled.img`
-  height: 35px;
 `;
 
 export const Logo = styled.img`
@@ -50,16 +46,29 @@ export const NavItems = styled.ul`
 
   @media (max-width: 980px) {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); // Fundo escuro para o modal
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
 
     &.open {
-      display: block;
+      display: flex;
+      opacity: 1;
+      visibility: visible;
     }
   }
 
   li {
     list-style: none;
-    padding: 0 15px;
-
+    padding: 20px 0;
     a {
       color: #fff;
       font-size: 23px;
@@ -77,12 +86,11 @@ export const NavItems = styled.ul`
 
 export const NavBar = styled(FaBars)`
   display: none;
+  font-size: 28px;
+  cursor: pointer;
 
   @media (max-width: 980px) {
-    display: flex;
-    font-size: 28px;
-    justify-content: end;
-    align-items: end;
+    display: block;
   }
 `;
 
@@ -90,7 +98,7 @@ export const User = styled(HiMiniUserPlus)`
   display: none;
 
   @media (max-width: 980px) {
-    display: flex;
+    display: block;
     font-size: 28px;
   }
 `;
@@ -109,10 +117,6 @@ export const LoginButton = styled.button`
   gap: 5px;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 
-  @media (max-width: 981px) {
-    display: none;
-  }
-
   &:hover {
     background-color: #b79d57;
     color: #fff;
@@ -121,6 +125,10 @@ export const LoginButton = styled.button`
 
   &:focus {
     outline: none;
+  }
+
+  @media (max-width: 980px) {
+    display: none;
   }
 `;
 

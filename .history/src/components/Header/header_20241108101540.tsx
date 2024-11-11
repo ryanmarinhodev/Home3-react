@@ -21,19 +21,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
   const [navItem, setNavItem] = useState(false);
 
-  const clickMenu = () => {
-    setNavItem(!navItem);
-  };
-
   return (
     <>
       <GlobalStyle />
       <HeaderStyle>
-        {navItem ? (
-          <NavBar onClick={clickMenu} />
-        ) : (
-          <IoMdClose style={{ fontSize: "28px" }} onClick={clickMenu} />
-        )}
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
 

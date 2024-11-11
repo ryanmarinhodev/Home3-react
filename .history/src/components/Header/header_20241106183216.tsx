@@ -37,7 +37,7 @@ const Header: React.FC<HeaderProps> = () => {
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
 
-        <NavItems className={!navItem ? "open" : ""}>
+        <NavItems className={`navItem ${!navItem} ? 'open' : ''`}>
           <li>
             <a href="./index.html">INÍCIO</a>
           </li>
