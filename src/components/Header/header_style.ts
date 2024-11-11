@@ -41,18 +41,30 @@ export const Logo = styled.img`
   }
 `;
 
-// Nav Items (ul com estilização para li e a)
 export const NavItems = styled.ul`
   display: flex;
   flex: 1;
   padding-left: 40px;
   gap: 25px;
+  transition: all 0.5s ease;
+
+  &.open {
+    flex-direction: column;
+    position: absolute;
+    top: 62px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+  }
 
   @media (max-width: 980px) {
     display: none;
 
     &.open {
-      display: block;
+      display: flex;
     }
   }
 
