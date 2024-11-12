@@ -37,7 +37,7 @@ export const Logo = styled.img`
   height: 35px;
 
   @media (max-width: 980px) {
-    height: 38px;
+    height: 33px;
   }
 `;
 
@@ -50,12 +50,12 @@ export const NavItems = styled.ul`
 
   &.open {
     flex-direction: column;
-    position: absolute;
-    top: 62px;
+    position: fixed;
+    top: 63px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #1c1e1f;
     justify-content: center;
     align-items: center;
   }
@@ -83,6 +83,12 @@ export const NavItems = styled.ul`
       &:hover {
         color: #b79d57;
       }
+
+      @media (max-width: 980px) {
+        color: #fff;
+        font-size: 20px;
+        margin-right: 60px;
+      }
     }
   }
 `;
@@ -93,7 +99,7 @@ export const NavBar = styled(FaBars)`
 
   @media (max-width: 980px) {
     display: flex;
-    font-size: 28px;
+    font-size: 22px;
     justify-content: end;
     align-items: end;
   }
@@ -106,6 +112,11 @@ export const Close = styled(IoMdClose)`
   @media (min-width: 981px) {
     display: none;
   }
+
+  @media (max-width: 980px) {
+    display: flex;
+    font-size: 22px;
+  }
 `;
 
 // User Icon (Ícone de Usuário)
@@ -114,7 +125,7 @@ export const User = styled(HiMiniUserPlus)`
 
   @media (max-width: 980px) {
     display: flex;
-    font-size: 28px;
+    font-size: 22px;
   }
 `;
 
