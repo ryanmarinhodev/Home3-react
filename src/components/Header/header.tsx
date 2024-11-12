@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = () => {
         <Logo src={LogoHome3} alt="Logo home3" />
         <User />
 
-        <NavItems className={`navItem ${navItem ? "open" : ""}`}>
+        <NavItems className={`navItem ${navItem ? "open" : "closed"}`}>
           <li onClick={clickMenuMobile}>
             <Link to="/">INÍCIO</Link>
           </li>

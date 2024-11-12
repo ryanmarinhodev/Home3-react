@@ -58,6 +58,18 @@ export const NavItems = styled.ul`
     background-color: #1c1e1f;
     justify-content: center;
     align-items: center;
+    animation: slideInFromLeft 0.5s ease-out forwards;
+
+    @keyframes NavItems {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%); /* Começa fora da tela */
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0); /* Vai para a posição normal */
+      }
+    }
   }
 
   @media (max-width: 980px) {
