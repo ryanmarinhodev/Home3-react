@@ -12,7 +12,6 @@ import {
   Close,
 } from "./header_style";
 import { Link } from "react-router-dom";
-
 import LogoHome3 from "../../assets/imagens/LogoHOME3.png";
 
 interface HeaderProps {
@@ -44,6 +43,7 @@ const Header: React.FC<HeaderProps> = () => {
       setNavItem(!navItem);
     }
   };
+
   return (
     <>
       <GlobalStyle />

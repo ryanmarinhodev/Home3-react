@@ -6,18 +6,29 @@ import Sobre from "components/Pages/sobre";
 import Projetos from "components/Pages/projetos";
 import Contato from "components/Pages/contato";
 
+//swiper carrossel =>
+import { register } from "swiper/element/bundle";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
+register();
+
 function App() {
   return (
-    <BrowserRouter>
-      <Header />
+    <>
+      <BrowserRouter>
+        <Header />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sobre" element={<Sobre />} />
-        <Route path="/" element={<Projetos />} />
-        <Route path="/" element={<Contato />} />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/" element={<Projetos />} />
+          <Route path="/" element={<Contato />} />
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 

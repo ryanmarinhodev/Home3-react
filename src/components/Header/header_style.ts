@@ -24,6 +24,9 @@ export const HeaderStyle = styled.nav`
   height: 70px;
   padding: 0 100px;
   gap: 50px;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 
   @media (max-width: 980px) {
     display: flex;
