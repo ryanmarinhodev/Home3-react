@@ -30,7 +30,6 @@ const Carrousel: React.FC = () => {
           </SwiperSlide>
         ))}
       </StyledSwiper>
-      ;
     </div>
   );
 };
