@@ -6,9 +6,9 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-import Image1 from "../../../src/assets/carrossel/1.png";
-import Image2 from "../../../src/assets/carrossel/2.png";
-import Image3 from "../../../src/assets/carrossel/3.png";
+import Image1 from "../../../src/assets/image-carrossel/1.png";
+import Image2 from "../../../src/assets/image-carrossel/2.png";
+import Image3 from "../../../src/assets/image-carrossel/3.png";
 
 const data = [
   { id: "1", image: Image1 },
