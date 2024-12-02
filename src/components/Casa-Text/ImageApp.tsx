@@ -1,4 +1,10 @@
-import { ClassH1, ContainerImageApp, Description, Title } from "./casa-style";
+import {
+  ClassH1,
+  ContainerImageApp,
+  Description,
+  ImageAparelho,
+  Title,
+} from "./casa-style";
 import ImageAparelhos from "../../assets/imagens-icones/aparelhos.svg";
 
 const AppImage: React.FC = () => {
@@ -13,7 +19,7 @@ const AppImage: React.FC = () => {
           da web.
         </Description>
       </ClassH1>
-      <img src={ImageAparelhos} alt="Imagem aparelhos" />
+      <ImageAparelho src={ImageAparelhos} alt="Imagem dos aplicativos" />
     </ContainerImageApp>
   );
 };

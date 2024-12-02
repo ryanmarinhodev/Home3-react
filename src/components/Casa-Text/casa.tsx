@@ -10,6 +10,7 @@ import ImageIcon5 from "../../assets/imagens-icones/icone-seguranca.svg";
 import ImageIcon6 from "../../assets/imagens-icones/icone-temperatura.svg";
 import Icon from "./Icon";
 import AppImage from "./ImageApp";
+import Footer from "./footer";
 
 const IconData = [
   { src: ImageIcon1, label: "Cenas" },
@@ -32,10 +33,9 @@ const Casa: React.FC = () => {
           </Text>
         </ContainerText>
       </Container>
-
       <Icon icons={IconData} />
-
       <AppImage />
+      <Footer />
     </>
   );
 };

@@ -120,9 +120,9 @@ export const IconLabel = styled.span`
 export const ContainerImageApp = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   color: white;
-  padding: 40px;
+  margin-top: 120px;
 `;
 
 export const ClassH1 = styled.div`
@@ -142,9 +142,125 @@ export const Description = styled.p`
   line-height: 1.6;
   color: #fff;
   max-width: 400px; /*Observar essa estilização */
+  text-align: justify;
 `;
 
 export const ImageAparelho = styled.img`
-  width: 100px;
+  width: 500px;
   height: auto;
+`;
+
+/* Footer */
+export const FooterContainer = styled.footer`
+  width: 100%;
+  background-color: #101010;
+  margin-top: 100px;
+`;
+
+export const FooterContent = styled.div`
+  background-color: var(--color-neutral-10);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 3rem 3.5rem;
+`;
+
+export const FooterContacts = styled.div`
+  img {
+    margin-left: 30px;
+  }
+`;
+
+export const FooterSocialMedia = styled.div`
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 21px;
+
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #b79d57; /* Cor dourada */
+    border-radius: 50%;
+    transition: all 0.4s;
+
+    i {
+      font-size: 1.25rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+`;
+
+export const FooterList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  ul {
+    list-style: none;
+  }
+
+  .footer-link {
+    color: #b79d57; /* Cor dourada */
+    transition: all 0.4s;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffd700; /* Cor dourada em hover */
+    }
+  }
+`;
+
+export const FooterSubscribe = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  p {
+    color: #b79d57; /* Cor dourada para o texto */
+  }
+`;
+
+export const InputGroup = styled.div`
+  display: flex;
+  align-items: center;
+  background-color: rgba(155, 155, 155, 0.2);
+  border-radius: 4px;
+
+  input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+  }
+
+  button {
+    background-color: #b79d57;
+    border: none;
+    color: var(--color-neutral-40);
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+`;
+
+export const Copyright = styled.div`
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-neutral-0);
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+  color: #fff; /* Cor dourada no copyright */
 `;
