@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Container, ContainerText, ImageHome, Text } from "./casa-style";
 import Image from "../../assets/imagens/imageHomeCasa.png";
 
@@ -11,6 +11,7 @@ import ImageIcon6 from "../../assets/imagens-icones/icone-temperatura.svg";
 import Icon from "./Icon";
 import AppImage from "./ImageApp";
 import Footer from "./footer";
+import ScrollReveal from "scrollreveal";
 
 const IconData = [
   { src: ImageIcon1, label: "Cenas" },
@@ -22,10 +23,32 @@ const IconData = [
 ];
 
 const Casa: React.FC = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      duration: 2500,
+      reset: true,
+    });
+
+    sr.reveal(".Container", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+    sr.reveal(".IconReveal", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+    sr.reveal(".Text-Reveal", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+  });
   return (
     <>
-      <Container>
-        <ImageHome src={Image} alt="Foto Casa" />
+      <Container className="Container">
+        <ImageHome src={Image} alt="Foto Casa" className="ImageHome" />
         <ContainerText>
           <Text>
             Descubra um mundo onde a tecnologia trabalha a seu favor, tornando
@@ -33,8 +56,8 @@ const Casa: React.FC = () => {
           </Text>
         </ContainerText>
       </Container>
-      <Icon icons={IconData} />
-      <AppImage />
+      <Icon icons={IconData} className="IconReveal" />
+      <AppImage className=".Text-Reveal" />
       <Footer />
     </>
   );

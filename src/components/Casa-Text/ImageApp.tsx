@@ -7,9 +7,13 @@ import {
 } from "./casa-style";
 import ImageAparelhos from "../../assets/imagens-icones/aparelhos.svg";
 
-const AppImage: React.FC = () => {
+interface TypeImage {
+  className: string;
+}
+
+const AppImage: React.FC<TypeImage> = ({ className }) => {
   return (
-    <ContainerImageApp>
+    <ContainerImageApp className={className}>
       <ClassH1>
         <Title>Aplicativo excepcionalmente intuitivo</Title>
         <Description>

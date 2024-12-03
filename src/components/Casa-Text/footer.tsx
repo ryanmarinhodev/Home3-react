@@ -91,17 +91,26 @@ const Footer: React.FC = () => {
           <h3>Produtos</h3>
           <ul>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://klipbox.com.br/?gclid=CjwKCAjw3oqoBhAjEiwA_UaLttSuMyKtsgE2c0Jy3mDqhvvBcUsCQvy5Fq8T4ZE_3zCdLTmtnSTOORoC7bgQAvD_BwE"
+                className="footer-link"
+              >
                 App
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://klipbox.com.br/?gclid=CjwKCAjw3oqoBhAjEiwA_UaLttSuMyKtsgE2c0Jy3mDqhvvBcUsCQvy5Fq8T4ZE_3zCdLTmtnSTOORoC7bgQAvD_BwE"
+                className="footer-link"
+              >
                 Desktop
               </a>
             </li>
             <li>
-              <a href="#" className="footer-link">
+              <a
+                href="https://klipbox.com.br/?gclid=CjwKCAjw3oqoBhAjEiwA_UaLttSuMyKtsgE2c0Jy3mDqhvvBcUsCQvy5Fq8T4ZE_3zCdLTmtnSTOORoC7bgQAvD_BwE"
+                className="footer-link"
+              >
                 Home
               </a>
             </li>

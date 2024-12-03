@@ -8,13 +8,14 @@ interface IconData {
 
 interface IconProps {
   icons: IconData[];
+  className: string;
 }
 
-const Icon: React.FC<IconProps> = ({ icons }) => {
+const Icon: React.FC<IconProps> = ({ icons, className }) => {
   return (
     <IconContainer>
       {icons.map((icon, index) => (
-        <IconItem key={index}>
+        <IconItem key={index} className={className}>
           <IconImage src={icon.src} />
           <IconLabel>{icon.label}</IconLabel>
         </IconItem>
