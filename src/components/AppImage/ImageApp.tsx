@@ -4,7 +4,7 @@ import {
   Description,
   ImageAparelho,
   Title,
-} from "./casa-style";
+} from "../AppImage/ImageAppStyle";
 import ImageAparelhos from "../../assets/imagens-icones/aparelhos.svg";
 
 interface TypeImage {

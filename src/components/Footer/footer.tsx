@@ -4,7 +4,7 @@ import {
   FaFacebookF,
   FaLinkedinIn,
   FaEnvelope,
-} from "react-icons/fa"; // Importando os ícones
+} from "react-icons/fa";
 import {
   FooterContainer,
   FooterContent,
@@ -14,7 +14,7 @@ import {
   FooterSubscribe,
   InputGroup,
   Copyright,
-} from "./casa-style";
+} from "./footerStyle";
 import Logo from "../../assets/imagens/LogoHOME3.png";
 
 interface TypeFooter {
@@ -30,7 +30,7 @@ const Footer: React.FC<TypeFooter> = ({ className }) => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Adicione a lógica para enviar o e-mail
+    // Logica para enviar email (corrigir)
     console.log("E-mail enviado:", email);
   };
 

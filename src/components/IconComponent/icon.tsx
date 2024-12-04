@@ -1,4 +1,4 @@
-import { IconContainer, IconItem, IconImage, IconLabel } from "./casa-style";
+import { IconContainer, IconItem, IconImage, IconLabel } from "./iconStyle";
 import React from "react";
 
 interface IconData {
