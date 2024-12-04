@@ -44,6 +44,11 @@ const Casa: React.FC = () => {
       delay: 300,
       origin: "top",
     });
+    sr.reveal(".Foter-Reveal", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
   });
   return (
     <>
@@ -57,8 +62,8 @@ const Casa: React.FC = () => {
         </ContainerText>
       </Container>
       <Icon icons={IconData} className="IconReveal" />
-      <AppImage className=".Text-Reveal" />
-      <Footer />
+      <AppImage className="Text-Reveal" />
+      <Footer className="Foter-Reveal" />
     </>
   );
 };

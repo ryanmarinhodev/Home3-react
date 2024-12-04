@@ -17,7 +17,11 @@ import {
 } from "./casa-style";
 import Logo from "../../assets/imagens/LogoHOME3.png";
 
-const Footer: React.FC = () => {
+interface TypeFooter {
+  className: string;
+}
+
+const Footer: React.FC<TypeFooter> = ({ className }) => {
   const [email, setEmail] = useState<string>("");
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,7 +35,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <FooterContainer>
+    <FooterContainer className={className}>
       <FooterContent>
         <FooterContacts>
           <img src={Logo} alt="Logo" style={{ width: "100px" }} />

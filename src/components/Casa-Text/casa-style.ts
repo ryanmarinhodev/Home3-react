@@ -123,10 +123,22 @@ export const ContainerImageApp = styled.div`
   justify-content: space-around;
   color: white;
   margin-top: 120px;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const ClassH1 = styled.div`
   max-width: 50%;
+
+  @media (max-width: 900px) {
+    max-width: 90%;
+    text-align: center;
+    background-color: aqua;
+  }
 `;
 
 export const Title = styled.h1`
@@ -134,20 +146,38 @@ export const Title = styled.h1`
   font-weight: bold;
   color: #b79d57;
   margin-bottom: 20px;
-  max-width: 40px;
+  background-color: red;
+
+  @media (max-width: 900px) {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 `;
 
 export const Description = styled.p`
   font-size: 1.2rem;
   line-height: 1.6;
   color: #fff;
-  max-width: 400px; /*Observar essa estilização */
+  max-width: 600px; /*Observar essa estilização */
   text-align: justify;
+  background-color: silver;
+
+  @media (max-width: 900px) {
+    font-size: 1rem;
+    max-width: 90%;
+    text-align: center;
+  }
 `;
 
 export const ImageAparelho = styled.img`
   width: 500px;
   height: auto;
+
+  @media (max-width: 900px) {
+    width: 80%;
+    max-width: 400px;
+    margin-top: 30px;
+  }
 `;
 
 /* Footer */
