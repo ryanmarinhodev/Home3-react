@@ -5,6 +5,7 @@ import Image from "../../assets/imagens/imageHomeCasa.png";
 import ScrollReveal from "scrollreveal";
 
 const Casa: React.FC = () => {
+  //ScrollReveal estilizado com as classes do componente (se precisar de manutenção olhar a pasta de componente com suas divs)
   useEffect(() => {
     const sr = ScrollReveal({
       duration: 2500,
