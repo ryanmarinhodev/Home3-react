@@ -18,12 +18,12 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "preserve",
+    "jsx": "react-jsx",  // Alterado para "react"
     "baseUrl": "./src",
     "incremental": true
   },
   "include": [
-    "src"
+    "src"  // Removido "projectNext/pages"
   ],
   "exclude": [
     "node_modules"

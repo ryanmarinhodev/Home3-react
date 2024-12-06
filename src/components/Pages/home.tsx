@@ -3,6 +3,7 @@ import Casa from "components/Casa-Text/casa";
 import Icon from "../IconComponent/icon";
 import AppImage from "../AppImage/ImageApp";
 import Footer from "../Footer/footer";
+import React from "react";
 
 import ImageIcon1 from "../../assets/imagens-icones/icone-cinema.svg";
 import ImageIcon2 from "../../assets/imagens-icones/icone-webcam.svg";

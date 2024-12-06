@@ -15,15 +15,14 @@ export const StyledSwiper = styled(Swiper)`
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 
     img {
       width: 100%;
       height: auto;
       object-fit: contain;
-      margin-top: 20px;
 
       @media (max-width: 980px) {
-        margin-top: 55px;
         width: 100%;
       }
 

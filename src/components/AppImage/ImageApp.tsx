@@ -6,6 +6,7 @@ import {
   Title,
 } from "../AppImage/ImageAppStyle";
 import ImageAparelhos from "../../assets/imagens-icones/aparelhos.svg";
+import React from "react";
 
 interface TypeImage {
   className: string;
