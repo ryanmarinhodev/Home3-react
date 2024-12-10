@@ -2,7 +2,6 @@ import Carrousel from "components/Carrousel/carrousel";
 import Casa from "components/Casa-Text/casa";
 import Icon from "../IconComponent/icon";
 import AppImage from "../AppImage/ImageApp";
-import Footer from "../Footer/footer";
 import React from "react";
 
 import ImageIcon1 from "../../assets/imagens-icones/icone-cinema.svg";
@@ -28,7 +27,6 @@ const Home = () => {
       <Casa />
       <Icon icons={IconData} className="IconReveal" />
       <AppImage className="Text-Reveal" />
-      <Footer className="Foter-Reveal" />
     </div>
   );
 };

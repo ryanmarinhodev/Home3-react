@@ -8,6 +8,7 @@ import Contato from "./components/Pages/contato";
 
 //swiper carrossel =>
 import { register } from "swiper/element/bundle";
+import Footer from "components/Footer/footer";
 
 register();
 
@@ -25,6 +26,7 @@ function App() {
             <Route path="/contato" element={<Contato />} />
           </Routes>
         </div>
+        <Footer />
       </BrowserRouter>
     </>
   );
