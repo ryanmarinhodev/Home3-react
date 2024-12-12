@@ -8,6 +8,10 @@ import {
   PhilosophyText,
   Divider,
   DescriptionText,
+  ContainerValue,
+  Blocos,
+  ValoresSpan,
+  TextParag,
 } from "./sobreSyle";
 import ImageHome from "../../assets/imagens/confrahome.webp";
 
@@ -44,6 +48,30 @@ const Sobre = () => {
           Nossa prioridade é realizar seu sonho.
         </DescriptionText>
       </FilosofiaSection>
+
+      <ContainerValue>
+        <Blocos>
+          <ValoresSpan>Nossa Missão</ValoresSpan>
+          <TextParag>
+            Trazer conforto, praticidade e segurança para ambientes familiares e
+            corporativos com soluções contemporâneas em tecnologia.
+          </TextParag>
+        </Blocos>
+        <Blocos>
+          <ValoresSpan>Nossa Visão</ValoresSpan>
+          <TextParag>
+            Ser referência no mercado corporativo, sendo reconhecida com uma
+            empresa de inovação e eficiência tecnológica.
+          </TextParag>
+        </Blocos>
+        <Blocos>
+          <ValoresSpan>Nossos Valores</ValoresSpan>
+          <TextParag>
+            Paixão pelo trabalho, respeito total as pessoas e excelência em tudo
+            que fazemos e espírito inovador.
+          </TextParag>
+        </Blocos>
+      </ContainerValue>
     </>
   );
 };
