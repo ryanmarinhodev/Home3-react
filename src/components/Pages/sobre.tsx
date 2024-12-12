@@ -15,7 +15,9 @@ import {
 } from "./sobreSyle";
 import ImageHome from "../../assets/imagens/confrahome.webp";
 
-const Sobre = () => {
+interface TypeAbout {}
+
+const Sobre: React.FC<TypeAbout> = () => {
   return (
     <>
       <Container>

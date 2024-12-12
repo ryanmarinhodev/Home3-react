@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+import { keyframes } from "styled-components";
+
+export const slideIn = keyframes`
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+`;
+
 export const Container = styled.div`
   max-width: 800px;
   margin: 0 auto;
