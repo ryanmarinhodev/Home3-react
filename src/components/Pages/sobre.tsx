@@ -1,4 +1,14 @@
-import { Container, Title, Line, Paragraph, ImageDisplayed } from "./sobreSyle";
+import {
+  Container,
+  Title,
+  Line,
+  Paragraph,
+  ImageDisplayed,
+  FilosofiaSection,
+  PhilosophyText,
+  Divider,
+  DescriptionText,
+} from "./sobreSyle";
 import ImageHome from "../../assets/imagens/confrahome.webp";
 
 const Sobre = () => {
@@ -24,11 +34,16 @@ const Sobre = () => {
           O futuro já está presente e a tecnologia avançada está a serviço do
           homem e bem-estar da Humanidade.
         </Paragraph>
-        <ImageDisplayed
-          src={ImageHome} // Substitua pelo caminho da sua imagem
-          alt="Equipe da empresa"
-        />
+        <ImageDisplayed src={ImageHome} alt="Equipe da empresa" />
       </Container>
+
+      <FilosofiaSection>
+        <PhilosophyText>FILOSOFIA</PhilosophyText>
+        <Divider />
+        <DescriptionText>
+          Nossa prioridade é realizar seu sonho.
+        </DescriptionText>
+      </FilosofiaSection>
     </>
   );
 };
