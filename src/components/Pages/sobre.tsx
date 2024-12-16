@@ -14,13 +14,42 @@ import {
   TextParag,
 } from "./sobreSyle";
 import ImageHome from "../../assets/imagens/confrahome.webp";
+import { useEffect } from "react";
+import ScrollReveal from "scrollreveal";
 
-interface TypeAbout {}
+interface TypeAbout {
+  classname: string;
+}
 
 const Sobre: React.FC<TypeAbout> = () => {
+  useEffect(() => {
+    const sr = ScrollReveal({
+      duration: 2500,
+      reset: true,
+    });
+
+    sr.reveal(".Container", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+
+    sr.reveal(".Filosofia", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+
+    sr.reveal(".Valores", {
+      distance: "40px",
+      delay: 300,
+      origin: "top",
+    });
+  }, []);
+
   return (
     <>
-      <Container>
+      <Container className="Container">
         <Title>EMPRESA</Title>
         <Line />
         <Paragraph>
@@ -43,7 +72,7 @@ const Sobre: React.FC<TypeAbout> = () => {
         <ImageDisplayed src={ImageHome} alt="Equipe da empresa" />
       </Container>
 
-      <FilosofiaSection>
+      <FilosofiaSection className="Filosofia">
         <PhilosophyText>FILOSOFIA</PhilosophyText>
         <Divider />
         <DescriptionText>
@@ -51,7 +80,7 @@ const Sobre: React.FC<TypeAbout> = () => {
         </DescriptionText>
       </FilosofiaSection>
 
-      <ContainerValue>
+      <ContainerValue className="Valores">
         <Blocos>
           <ValoresSpan>Nossa Missão</ValoresSpan>
           <TextParag>
